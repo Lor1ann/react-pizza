@@ -53,8 +53,40 @@
       "title": "Овощи и грибы",
       "price": 410,
       "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/3a9785bc5ac145118403de7d22b70fd9_584x584.jpeg",
-      "category": 0,
+      "category": 2,
       "rating": 4
+    },
+    {
+      "id": 7,
+      "title": "Ветчина и грибы",
+      "price": 439,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/aa845b6e841241fbbff1a770b3ad3103_584x584.jpeg",
+      "category": 4,
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "title": "Мясная",
+      "price": 520,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/afb7bb96c6624a17b69543db3b340c86_584x584.jpeg",
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "title": "Колбаски барбекю",
+      "price": 429,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/20734006e66d427fb2cbb8fbb595b21e_584x584.jpeg",
+      "category": 3,
+      "rating": 7
+    },
+    {
+      "id": 10,
+      "title": "Четыре сезона",
+      "price": 379,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/a02280d5dd9342f7925538752be9b521_584x584.jpeg",
+      "category": 1,
+      "rating": 7
     }
   ]
 }
