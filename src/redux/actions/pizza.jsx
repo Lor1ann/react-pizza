@@ -10,7 +10,7 @@ export const setItems = (items) => {
 export const fetchItems = (sort, category, order) => async (dispatch) => {
   try {
     const data = await axios.get(
-      `http://localhost:3001/pizzas?${sort !== null ? `_sort=${sort.type}` : null}${
+      `/pizzas?${sort !== null ? `_sort=${sort.type}` : null}${
         category !== 0 ? `&category=${category}` : ''
       }&_order=${order === true ? 'asc' : 'desc'}`,
     );

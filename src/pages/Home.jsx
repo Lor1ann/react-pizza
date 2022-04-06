@@ -24,8 +24,6 @@ const Home = () => {
     dispatch(addItemToCart(obj));
   };
 
-  const state = useSelector((state) => state);
-
   React.useEffect(() => {
     dispatch(fetchItems(sortItems[activeSort], activeCategory, order));
   }, [activeSort, dispatch, activeCategory, order]);
