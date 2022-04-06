@@ -1,0 +1,60 @@
+{
+  "pizzas": [
+    {
+      "id": 0,
+      "title": "Аррива!",
+      "price": 395,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/163d95b8408843419b0c8ee18aa2452b_584x584.jpeg",
+      "category": 1,
+      "rating": 6
+    },
+    {
+      "id": 1,
+      "title": "Индейка в мандаринах",
+      "price": 490,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/961ba97167754e35831d1640ab91a4fe_584x584.jpeg",
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "title": "Пепперони",
+      "price": 355,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/bf3377af7cfe4962915668d14bb8d0f4_584x584.jpeg",
+      "category": 4,
+      "rating": 2
+    },
+    {
+      "id": 3,
+      "title": "Гавайская",
+      "price": 429,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/5bf1c77b3ff44f93bb01c840ab35b033_584x584.jpeg",
+      "category": 3,
+      "rating": 8
+    },
+    {
+      "id": 4,
+      "title": "Цыпленок",
+      "price": 330,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d23af75498eb47a8a586313792da917f_584x584.jpeg",
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 5,
+      "title": "Ветчина и сыр",
+      "price": 410,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/5630c6ed3f394c7ba25e1ef79a67b7ee_584x584.jpeg",
+      "category": 5,
+      "rating": 10
+    },
+    {
+      "id": 6,
+      "title": "Овощи и грибы",
+      "price": 410,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/3a9785bc5ac145118403de7d22b70fd9_584x584.jpeg",
+      "category": 0,
+      "rating": 4
+    }
+  ]
+}
