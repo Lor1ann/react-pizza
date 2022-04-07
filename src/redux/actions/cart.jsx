@@ -12,3 +12,11 @@ export const deleteItem = (id) => {
 export const clearAllCart = () => {
   return { type: 'CLEAR_ALL_CART' };
 };
+
+export const minusCartItem = (id) => {
+  return { type: 'MINUS_ITEM_CART', payload: id };
+};
+
+export const plusCartItem = (id) => {
+  return { type: 'PLUS_ITEM_CART', payload: id };
+};

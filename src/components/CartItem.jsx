@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartItem = ({ size, title, image, type, price, amount, onDelete, id }) => {
+const CartItem = ({ size, title, image, type, price, amount, onDelete, id, onMinus, onPlus }) => {
   return (
     <div className="cart__item">
       <div className="cart__item-img">
@@ -10,7 +10,9 @@ const CartItem = ({ size, title, image, type, price, amount, onDelete, id }) => 
         <h3>{title}</h3>
       </div>
       <div className="cart__item-count">
-        <div className="button button--outline button--circle cart__item-count-minus">
+        <div
+          className="button button--outline button--circle cart__item-count-minus"
+          onClick={() => onMinus(id)}>
           <svg
             width="10"
             height="10"
@@ -28,7 +30,9 @@ const CartItem = ({ size, title, image, type, price, amount, onDelete, id }) => 
           </svg>
         </div>
         <b>{amount}</b>
-        <div className="button button--outline button--circle cart__item-count-plus">
+        <div
+          className="button button--outline button--circle cart__item-count-plus"
+          onClick={() => onPlus(id)}>
           <svg
             width="10"
             height="10"

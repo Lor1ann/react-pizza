@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import EmptyCartImg from '../assets/img/empty-cart.png';
 import { useDispatch, useSelector } from 'react-redux';
 import CartItem from '../components/CartItem';
-import { clearAllCart, deleteItem } from '../redux/actions/cart';
+import { clearAllCart, deleteItem, minusCartItem, plusCartItem } from '../redux/actions/cart';
 
 const Cart = () => {
   const { totalAmount, items, totalPrice } = useSelector(({ cart }) => cart);
@@ -19,6 +19,14 @@ const Cart = () => {
   const onDeleteItem = (id) => {
     const res = window.confirm('Вы точно хотите убрать это из корзины?');
     res && dispatch(deleteItem(id));
+  };
+
+  const onMinusItem = (id) => {
+    dispatch(minusCartItem(id));
+  };
+
+  const onPlusItem = (id) => {
+    dispatch(plusCartItem(id));
   };
 
   return (
@@ -120,6 +128,8 @@ const Cart = () => {
               <div className="content__items">
                 {addedItem.map((obj) => (
                   <CartItem
+                    onPlus={(id) => onPlusItem(id)}
+                    onMinus={(id) => onMinusItem(id)}
                     onDelete={(id) => onDeleteItem(id)}
                     key={obj.id}
                     id={obj.id}
