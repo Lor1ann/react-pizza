@@ -1,0 +1,44 @@
+@import '../variables';
+
+
+.modal{
+    font-size: 18px;
+    margin: -50px 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #7e7e7e4d;
+    &__body {
+
+      border-radius: 8px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      background-color: #f7f7f7;
+      align-items: center;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    button{
+        margin-top: 15px;
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 6px 36px;
+        outline: none;
+        border: none;
+        background-color: #e0e0e0;
+    }
+
+
+    button:first-child {
+        margin-right: 36px;
+      }
+      button:hover {
+          color: #fff;
+    
+        background-color: $orange;
+      }
+}

@@ -66,3 +66,11 @@
     letter-spacing: 0.015em;
   }
 }
+
+
+
+@media (max-width: 760px) {
+  .pizza-block:not(:nth-of-type(4n)) {
+    margin-right: 0px;
+  }
+}

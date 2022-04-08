@@ -1,28 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+
 import EmptyCartImg from '../assets/img/empty-cart.png';
 import { useDispatch, useSelector } from 'react-redux';
 import CartItem from '../components/CartItem';
 import { clearAllCart, deleteItem, minusCartItem, plusCartItem } from '../redux/actions/cart';
+import { toOpenModal } from '../redux/actions/modal';
 
 const Cart = () => {
   const { totalAmount, items, totalPrice } = useSelector(({ cart }) => cart);
   const dispatch = useDispatch();
   const addedItem = Object.keys(items).map((key) => items[key][0]);
 
-  const onClearAll = () => {
-    const res = window.confirm('Вы точно хотите очистить корзину?');
-    res && dispatch(clearAllCart());
+  const onMinusItem = (id) => {
+    dispatch(minusCartItem(id));
   };
 
   const onDeleteItem = (id) => {
-    const res = window.confirm('Вы точно хотите убрать это из корзины?');
-    res && dispatch(deleteItem(id));
-  };
-
-  const onMinusItem = (id) => {
-    dispatch(minusCartItem(id));
+    dispatch(toOpenModal('Вы точно хотите удалить заказ?', () => deleteItem(id)));
   };
 
   const onPlusItem = (id) => {
@@ -85,7 +81,11 @@ const Cart = () => {
                   </svg>
                   Корзина
                 </h2>
-                <div className="cart__clear">
+                <div
+                  className="cart__clear"
+                  onClick={() =>
+                    dispatch(toOpenModal('Вы точно хотите удалить все заказы?', clearAllCart))
+                  }>
                   <svg
                     width="20"
                     height="20"
@@ -122,7 +122,7 @@ const Cart = () => {
                     />
                   </svg>
 
-                  <span onClick={onClearAll}>Очистить корзину</span>
+                  <span>Очистить корзину</span>
                 </div>
               </div>
               <div className="content__items">

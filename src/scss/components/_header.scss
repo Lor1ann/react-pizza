@@ -30,3 +30,15 @@
     }
   }
 }
+
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__logo{
+    margin-bottom: 20px;
+  }
+}
